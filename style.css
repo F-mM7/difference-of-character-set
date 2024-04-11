@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.container > div {
+  width: 49vw;
+}
+
+textarea {
+  line-height: 1.3;
+  height: calc(1.3em * 12);
+  width: 100%;
+}
+
+/* ==== base ==== */
+
+html {
+  touch-action: manipulation;
+}
+
+/* animation */
+.correct {
+  animation-name: correct;
+  animation-duration: 1s;
+}
+.incorrect {
+  animation-name: incorrect;
+  animation-duration: 1s;
+}
+@keyframes correct {
+  0% {
+    background-color: green;
+  }
+}
+@keyframes incorrect {
+  0% {
+    background-color: maroon;
+  }
+}
